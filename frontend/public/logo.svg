@@ -1,5 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-  <rect width="512" height="512" rx="112" fill="#2c3e50"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="50 50 412 412">
+  
   <!-- leaves -->
   <path d="M232 356 Q160 300 96 344 Q160 396 232 368 Z" fill="#6ab04c"/>
   <path d="M280 356 Q352 300 416 344 Q352 396 280 368 Z" fill="#6ab04c"/>
@@ -21,7 +21,7 @@
     <!-- bigger graduation cap -->
     <path d="M-70 -86 L70 -86 L70 -46 Q0 -20 -70 -46 Z" fill="#16a085"/>
     <polygon points="0,-178 144,-118 0,-58 -144,-118" fill="#1abc9c"/>
-    <path d="M0 -118 L116 -104 L116 -48" fill="none" stroke="#ffffff" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
-    <circle cx="116" cy="-40" r="13" fill="#ffffff"/>
+    <path d="M0 -118 L116 -104 L116 -48" fill="none" stroke="#2c3e50" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="116" cy="-40" r="13" fill="#2c3e50"/>
   </g>
 </svg>
