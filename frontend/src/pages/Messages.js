@@ -197,7 +197,7 @@ const selectUser = (u) => {
 };
 
 const styles = {
-  container: { padding: '40px', maxWidth: '1000px', margin: '0 auto' },
+  container: { padding: 'clamp(16px, 5vw, 40px)', maxWidth: '1000px', margin: '0 auto' },
   header: { display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '20px' },
   title: { color: '#2c3e50', fontSize: '26px' },
   newMsgBtn: { backgroundColor: '#2c3e50', color: 'white', border: 'none', padding: '10px 20px', borderRadius: '6px', cursor: 'pointer' },
@@ -208,8 +208,8 @@ const styles = {
   userAvatar: { width: '40px', height: '40px', borderRadius: '50%', backgroundColor: '#2c3e50', color: 'white', display: 'flex', alignItems: 'center', justifyContent: 'center', fontWeight: 'bold' },
   userName: { margin: 0, fontWeight: 'bold', fontSize: '14px', color: '#2c3e50' },
   userRole: { margin: 0, fontSize: '12px', color: '#7f8c8d' },
-  layout: { display: 'grid', gridTemplateColumns: '280px 1fr', gap: '20px' },
-  sidebar: { backgroundColor: 'white', borderRadius: '10px', boxShadow: '0 4px 15px rgba(0,0,0,0.08)', padding: '20px', overflowY: 'auto', maxHeight: '550px' },
+  layout: { display: 'flex', flexWrap: 'wrap', gap: '20px' },
+  sidebar: { flex: '1 1 280px', boxSizing: 'border-box', backgroundColor: 'white', borderRadius: '10px', boxShadow: '0 4px 15px rgba(0,0,0,0.08)', padding: '20px', overflowY: 'auto', maxHeight: '550px' },
   sidebarTitle: { color: '#2c3e50', marginBottom: '15px' },
   empty: { color: '#7f8c8d', fontSize: '14px' },
   convItem: { display: 'flex', alignItems: 'center', gap: '10px', padding: '12px', borderRadius: '8px', cursor: 'pointer', marginBottom: '8px' },
@@ -218,7 +218,7 @@ const styles = {
   unreadDot: { position: 'absolute', top: '0px', right: '0px', width: '12px', height: '12px', backgroundColor: '#e74c3c', borderRadius: '50%', border: '2px solid white' },
   convName: { margin: 0, fontWeight: 'bold', fontSize: '14px' },
   convRole: { margin: 0, fontSize: '12px', opacity: 0.7 },
-  chatArea: { backgroundColor: 'white', borderRadius: '10px', boxShadow: '0 4px 15px rgba(0,0,0,0.08)', display: 'flex', flexDirection: 'column' },
+  chatArea: { flex: '999 1 320px', minWidth: 0, backgroundColor: 'white', borderRadius: '10px', boxShadow: '0 4px 15px rgba(0,0,0,0.08)', display: 'flex', flexDirection: 'column' },
   chatHeader: { padding: '20px', borderBottom: '1px solid #ecf0f1' },
   chatRole: { color: '#7f8c8d', fontSize: '14px', fontWeight: 'normal' },
   messages: { height: '350px', overflowY: 'auto', padding: '20px', display: 'flex', flexDirection: 'column', gap: '10px' },

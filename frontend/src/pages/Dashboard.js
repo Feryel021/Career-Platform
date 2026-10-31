@@ -144,7 +144,7 @@ const Dashboard = () => {
 };
 
 const styles = {
-  container: { padding: '40px', maxWidth: '1000px', margin: '0 auto' },
+  container: { padding: 'clamp(16px, 5vw, 40px)', maxWidth: '1000px', margin: '0 auto' },
   welcome: { marginBottom: '30px' },
   title: { color: '#2c3e50', fontSize: '28px' },
   subtitle: { color: '#7f8c8d', fontSize: '16px' },
@@ -165,6 +165,8 @@ const styles = {
     borderRadius: '8px',
     backgroundColor: '#f8f9fa',
     marginBottom: '10px',
+    flexWrap: 'wrap',
+    gap: '10px',
   },
   requestName: { margin: 0, fontWeight: 'bold', color: '#2c3e50' },
   requestEmail: { margin: 0, fontSize: '13px', color: '#7f8c8d' },
@@ -192,7 +194,7 @@ const styles = {
     fontSize: '13px',
     fontWeight: 'bold',
   },
-  grid: { display: 'grid', gridTemplateColumns: 'repeat(2, 1fr)', gap: '20px' },
+  grid: { display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(340px, 100%), 1fr))', gap: '20px' },
   card: {
     backgroundColor: 'white',
     padding: '30px',

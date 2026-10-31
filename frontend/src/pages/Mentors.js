@@ -88,11 +88,11 @@ const Mentors = () => {
 };
 
 const styles = {
-  container: { padding: '40px', maxWidth: '1000px', margin: '0 auto' },
+  container: { padding: 'clamp(16px, 5vw, 40px)', maxWidth: '1000px', margin: '0 auto' },
   title: { color: '#2c3e50', fontSize: '26px', marginBottom: '5px' },
   subtitle: { color: '#7f8c8d', marginBottom: '30px' },
   message: { color: 'green', marginBottom: '20px' },
-  grid: { display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '20px' },
+  grid: { display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(240px, 100%), 1fr))', gap: '20px' },
   card: {
     backgroundColor: 'white', padding: '25px', borderRadius: '10px',
     boxShadow: '0 4px 15px rgba(0,0,0,0.08)', textAlign: 'center',

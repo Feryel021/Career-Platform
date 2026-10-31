@@ -138,8 +138,8 @@ const Resources = () => {
 };
 
 const styles = {
-  container: { padding: '40px', maxWidth: '1000px', margin: '0 auto' },
-  header: { display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '30px' },
+  container: { padding: 'clamp(16px, 5vw, 40px)', maxWidth: '1000px', margin: '0 auto' },
+  header: { display: 'flex', flexWrap: 'wrap', gap: '10px', justifyContent: 'space-between', alignItems: 'center', marginBottom: '30px' },
   title: { color: '#2c3e50', fontSize: '26px', marginBottom: '5px' },
   subtitle: { color: '#7f8c8d' },
   postButton: { backgroundColor: '#2c3e50', color: 'white', border: 'none', padding: '10px 20px', borderRadius: '6px', cursor: 'pointer', fontSize: '14px' },
@@ -148,7 +148,7 @@ const styles = {
   input: { width: '100%', padding: '12px', marginBottom: '15px', borderRadius: '6px', border: '1px solid #ddd', fontSize: '15px', boxSizing: 'border-box' },
   submitButton: { backgroundColor: '#8e44ad', color: 'white', border: 'none', padding: '12px 25px', borderRadius: '6px', cursor: 'pointer', fontSize: '15px' },
   empty: { color: '#7f8c8d', textAlign: 'center', marginTop: '50px' },
-  grid: { display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '20px' },
+  grid: { display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(240px, 100%), 1fr))', gap: '20px' },
   card: { backgroundColor: 'white', padding: '25px', borderRadius: '10px', boxShadow: '0 4px 15px rgba(0,0,0,0.08)' },
   badge: { color: 'white', padding: '4px 12px', borderRadius: '20px', fontSize: '12px', fontWeight: 'bold', display: 'inline-block', marginBottom: '12px' },
   resourceTitle: { color: '#2c3e50', marginBottom: '8px' },

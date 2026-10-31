@@ -140,8 +140,8 @@ const Jobs = () => {
 };
 
 const styles = {
-  container: { padding: '40px', maxWidth: '900px', margin: '0 auto' },
-  header: { display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '30px' },
+  container: { padding: 'clamp(16px, 5vw, 40px)', maxWidth: '900px', margin: '0 auto' },
+  header: { display: 'flex', flexWrap: 'wrap', gap: '10px', justifyContent: 'space-between', alignItems: 'center', marginBottom: '30px' },
   title: { color: '#2c3e50', fontSize: '26px', marginBottom: '5px' },
   subtitle: { color: '#7f8c8d' },
   postButton: { backgroundColor: '#2c3e50', color: 'white', border: 'none', padding: '10px 20px', borderRadius: '6px', cursor: 'pointer', fontSize: '14px' },
@@ -152,13 +152,13 @@ const styles = {
   empty: { color: '#7f8c8d', textAlign: 'center', marginTop: '50px' },
   list: { display: 'flex', flexDirection: 'column', gap: '20px' },
   card: { backgroundColor: 'white', padding: '25px', borderRadius: '10px', boxShadow: '0 4px 15px rgba(0,0,0,0.08)' },
-  cardHeader: { display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', marginBottom: '10px' },
+  cardHeader: { display: 'flex', flexWrap: 'wrap', gap: '10px', justifyContent: 'space-between', alignItems: 'flex-start', marginBottom: '10px' },
   jobTitle: { color: '#2c3e50', marginBottom: '5px' },
   company: { color: '#7f8c8d', fontSize: '14px', marginBottom: '3px' },
   postedBy: { color: '#95a5a6', fontSize: '13px' },
   badge: { color: 'white', padding: '4px 12px', borderRadius: '20px', fontSize: '12px', fontWeight: 'bold' },
   description: { color: '#555', fontSize: '14px', lineHeight: '1.6', marginBottom: '15px' },
-  cardActions: { display: 'flex', gap: '10px', alignItems: 'center' },
+  cardActions: { display: 'flex', flexWrap: 'wrap', gap: '10px', alignItems: 'center' },
   applyButton: { backgroundColor: '#27ae60', color: 'white', padding: '8px 16px', borderRadius: '6px', textDecoration: 'none', fontSize: '14px', fontWeight: 'bold' },
   shareButton: { backgroundColor: '#3498db', color: 'white', border: 'none', padding: '8px 16px', borderRadius: '6px', cursor: 'pointer', fontSize: '14px' },
   deleteButton: { backgroundColor: '#e74c3c', color: 'white', border: 'none', padding: '8px 16px', borderRadius: '6px', cursor: 'pointer', fontSize: '14px' },
